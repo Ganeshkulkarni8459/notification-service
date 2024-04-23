@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <changeSet id="20240421" author="Ganesh Kulkarni">
+        <insert tableName="notificationEntity">
+            <column name="notification_code" value="1" />
+            <column name="client_id" value="CLIENT001" />
+            <column name="mode" value="EMAIL" />
+            <column name="subject" value="Important Notification" />
+            <column name="body" value="Hello, this is an important notification." />
+            <column name="footer" value="Best regards, Your App" />
+            <column name="from_email" value="kulkarnikashinath123@gmail.com" />
+            <column name="to_email" value="ganukulkarni8459@gmail.com" />
+            <column name="created_date" valueDate="2024-04-21T10:00:00" />
+            <column name="updated_date" valueDate="2024-04-21T10:00:00" />
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

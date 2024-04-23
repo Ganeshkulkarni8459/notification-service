@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <changeSet id="20240421" author="Ganesh Kulkarni">
+        <createTable tableName="notificationEntity" schemaName="notification_service_db">
+            <column name="notification_code" type="BIGINT">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="client_id" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="mode" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="subject" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="body" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="footer" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="from_email" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="to_email" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="created_date" type="TIMESTAMP">
+                <constraints nullable="false" />
+            </column>
+            <column name="updated_date" type="TIMESTAMP">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
